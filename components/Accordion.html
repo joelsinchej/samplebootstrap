@@ -1,11 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-utilities.min.css" rel="stylesheet" />
+
+
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 </head>
+
 <body>
-    
+    <div class="accordion" id="ejemploAcoordion">
+
+        <!-- Contenedor de Acoordeon Item 1 : Inicio -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tituloUno">
+                <button class="accordion-button" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#caidaUno"
+                    aria-expanded="true" aria-controls="caidaUno">
+                    Accordion Item #1
+                </button>
+            </h2>
+
+            <div id="caidaUno" class="accordion-collapse collapse show" 
+                aria-labelledby="tituloUno"
+                data-bs-parent="#ejemploAcoordion">
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos officiis nobis dolore provident neque quia nulla quam quidem velit.
+                    Sed debitis neque eos exercitationem aspernatur,
+                    porro corporis! Possimus, consequuntur non.
+                </div>
+
+            </div>
+        </div>
+        <!-- Contenedor de Acoordeon : Final  -->
+
+
+        <!-- Contenedor de Acoordeon Item 2 : Inicio -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tituloDos">
+                <button class="accordion-button" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#caidaDos"
+                    aria-expanded="false" aria-controls="caidaDos">
+                    Accordion Item #2
+                </button>
+            </h2>
+
+            <div id="caidaDos" class="accordion-collapse collapse" aria-labelledby="tituloDos"
+                data-bs-parent="#ejemploAcoordion">
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos officiis nobis dolore provident neque quia nulla quam quidem velit.
+                    Sed debitis neque eos exercitationem aspernatur,
+                    porro corporis! Possimus, consequuntur non.
+                </div>
+
+            </div>
+        </div>
+        <!-- Contenedor de Acoordeon : Final  -->
+
+
+        <!-- Contenedor de Acoordeon Item 3 : Inicio -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tituloTres">
+                <button class="accordion-button" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#caidaTres"
+                    aria-expanded="false" aria-controls="caidaTres">
+                    Accordion Item #3
+                </button>
+            </h2>
+
+            <div id="caidaTres" class="accordion-collapse collapse" aria-labelledby="tituloTres"
+                data-bs-parent="#ejemploAcoordion">
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos officiis nobis dolore provident neque quia nulla quam quidem velit.
+                    Sed debitis neque eos exercitationem aspernatur,
+                    porro corporis! Possimus, consequuntur non.
+                </div>
+
+            </div>
+        </div>
+        <!-- Contenedor de Acoordeon : Final  -->
+
+
+        <!-- Contenedor de Acoordeon Item 3 : Inicio -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="tituloCuatro">
+                <button class="accordion-button" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#caidaCuatro"
+                    aria-expanded="false" aria-controls="caidaCuatro">
+                    Accordion Item #4
+                </button>
+            </h2>
+
+            <div id="caidaCuatro" class="accordion-collapse collapse" 
+                aria-labelledby="tituloCuatro"
+                data-bs-parent="#ejemploAcoordion">
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos officiis nobis dolore provident neque quia nulla quam quidem velit.
+                    Sed debitis neque eos exercitationem aspernatur,
+                    porro corporis! Possimus, consequuntur non.
+                </div>
+
+            </div>
+        </div>
+        <!-- Contenedor de Acoordeon : Final  -->
+
+
+    </div>
+
+
+
+
 </body>
+
 </html>
