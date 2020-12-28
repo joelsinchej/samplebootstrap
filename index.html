@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+
+    <input class="form-control" type="text" placeholder="ingrese texto aqui" aria-label="Ejemplo" readonly />
+
+    <div class="mb-3">
+        <label for="seleccionarArchivo-1" class="form-label">
+            Seleccione Archivo
+        </label>
+        <input class="form-control" type="file" id="seleccionarArchivo-1" />
+    </div>
+
+    <div class="mb-3">
+        <label for="seleccionarArchivo-2" class="form-label">
+            Multiples Archivos
+        </label>
+        <input class="form-control" type="file" id="seleccionarArchivo-2" multiple>
+    </div>
+
+    <div class="mb-3">
+        <label for="formFileDisabled" class="form-label">
+            Texto Deshabilitado
+        </label>
+        <input class="form-control" type="file" id="formFileDisabled" disabled>
+    </div>
+
+    <div class="mb-3">
+        <label for="formFileSm" class="form-label">
+            Entrada pequeña
+        </label>
+        <input class="form-control form-control-sm" id="formFileSm" type="file">
+    </div>
+
+    <div>
+        <label for="formFileLg" class="form-label">
+            Entrada Grande
+        </label>
+        <input class="form-control form-control-lg" id="formFileLg" type="file">
+    </div>
+    <div class="mb-3">
+        <label for="colorEjemplo" class="form-label">Seleccionador de colores</label>
+        <input type="color" class="form-control form-control-color" id="colorEjemplo" value="#563d7c"
+            title="Escoge tu color">
+    </div>
+
+
+
+
+    <form class="row g-3 was-validated">
+        <div class="form-floating col-md-4">
+            <input type="text" class="form-control" id="validarNombre" placeholder="Nombre" required>
+            <label for="validarNombre">Nombre</label>
+            <div class="valid-feedback">
+                ¡Ok!
+            </div>
+        </div>
+        <div class="form-floating col-md-4">
+            <input type="text" class="form-control" id="validarApellido" placeholder="Apellido" required>
+            <label for="validarApellido">Apellido</label>
+            <div class="valid-feedback">
+                ¡Ok!
+            </div>
+        </div>
+        <div class="form-floating col-md-4">
+            <label for="validarNombreDeUsuario">Username</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="entradaParaElPrejijo">@</span>
+                <input type="text" class="form-control" id="validarNombreDeUsuario"
+                    aria-describedby="entradaParaElPrejijo" placeholder="Username" required>
+                <div class="invalid-feedback">
+                    Por favor, escoja un nombre de Usuario.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="validarCiudad" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="validarCiudad" required>
+            <div class="invalid-feedback">
+                Por favor, ingrese una ciudad valida.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validarDistrito" class="form-label">Distrito</label>
+            <select class="form-select" id="validarDistrito" required>
+                <option selected disabled value="">Escoge...</option>
+                <option>Ate</option>
+                <option>La molina</option>
+                <option>Miraflores</option>
+            </select>
+            <div class="invalid-feedback">
+                Por favor, seleccione un distrito valido.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validarCodigoPostal" class="form-label">Codigo Postal</label>
+            <input type="text" class="form-control" id="validarCodigoPostal" required>
+            <div class="invalid-feedback">
+                Por favor, ingrese un codigo postal valido.
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="validarMarca" required>
+                <label class="form-check-label" for="validarMarca">
+                    Estoy deacuerdo con los terminos y condiciones.
+                </label>
+                <div class="invalid-feedback">
+                    Debes marcar todas las casillas antes de seguir.
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Aceptar</button>
+        </div>
+    </form>
+
+
+
+
+</body>
+
+</html>
