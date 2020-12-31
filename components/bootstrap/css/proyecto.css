@@ -1,0 +1,9 @@
+@import 'fonts/stylesheet.css';
+@import 'fonts/Langar/stylesheet.css';
+
+.fuente-personalizada {
+    font-family : 'audiowideregular', Arial, Helvetica, sans-serif !important;
+}
+.fuente-langar{
+    font-family :'langarregular' , Arial, Helvetica, sans-serif !important;
+}
